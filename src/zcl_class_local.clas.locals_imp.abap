@@ -12,11 +12,16 @@ CLASS lcl_connection DEFINITION.
 
     CLASS-DATA conn_counter TYPE i.
 
+
   PROTECTED SECTION.
   PRIVATE SECTION.
+
+
 
 ENDCLASS.
 
 CLASS lcl_connection IMPLEMENTATION.
+
+
 
 ENDCLASS.

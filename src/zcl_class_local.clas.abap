@@ -30,7 +30,7 @@ CLASS zcl_class_local IMPLEMENTATION.
 
 
 
- DATA connection TYPE REF TO lcl_connection.
+    DATA connection TYPE REF TO lcl_connection.
     DATA connections TYPE TABLE OF REF TO lcl_connection.
 
 * First Instance
@@ -38,10 +38,12 @@ CLASS zcl_class_local IMPLEMENTATION.
 
     connection = NEW #(  ).
 
-    connection->carrier_id    = 'LH'.
+    connection->carrier_id = 'LH'.
     connection->connection_id = '0400'.
 
     APPEND connection TO connections.
+
+
 
 * Second Instance
 **********************************************************************
@@ -61,7 +63,7 @@ CLASS zcl_class_local IMPLEMENTATION.
 
     APPEND connection TO connections.
 
-
+    out->write( connections ).
 
   ENDMETHOD.
 ENDCLASS.
