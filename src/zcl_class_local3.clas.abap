@@ -39,7 +39,6 @@ METHOD if_oo_adt_classrun~main.
         APPEND connection TO connections.
 
 
-
       CATCH cx_abap_invalid_value.
         out->write( `Method call failed` ).
     ENDTRY.
