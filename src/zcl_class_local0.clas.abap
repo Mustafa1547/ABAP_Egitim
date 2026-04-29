@@ -21,7 +21,7 @@ CLASS zcl_class_local0 IMPLEMENTATION.
     CONSTANTS c_carrier_id TYPE /dmo/carrier_id       VALUE 'LH'.
     CONSTANTS c_connection_id TYPE /dmo/connection_id VALUE '0400'.
 
-    DATA connection  TYPE REF TO lcl_connection.
+    DATA connection TYPE REF TO lcl_connection.
     DATA connections  TYPE TABLE OF REF TO lcl_connection.
 
 * Create Instance
